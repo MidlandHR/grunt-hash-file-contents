@@ -1,5 +1,7 @@
 # grunt-hash-file-contents
 
+Takes a list of files and converts them into a hash. Useful for comparing versions of a codebase as small changes in code result in a greatly different hash.
+
 ## Install
 
 ```
