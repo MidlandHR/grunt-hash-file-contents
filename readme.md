@@ -5,13 +5,13 @@ Takes a list of files and converts them into a hash. Useful for comparing versio
 ## Install
 
 ```
-$ npm install --save-dev grunt-hash-file-contents
+$ npm install grunt-hash-file-contents --save-dev
 ```
 
 ## Usage
 
 ```js
-grunt.loadNpmTasks('grunt-contrib-concat');
+grunt.loadNpmTasks('grunt-hash-file-contents');
 
 grunt.initConfig({
   hashFileContents: {
