@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('mhrHashFileContents', function() {
         var config = getConfig(),
-            hash = crypto.createHash('md5');
+            hash = crypto.createHash(config.algorithm || 'md5');
 
         if(!(config.files && config.target)) {
             grunt.fatal('Missing config information, requires files and target');
@@ -17,6 +17,6 @@ module.exports = function(grunt) {
             hash.update(grunt.file.read(file));
         });
 
-        grunt.file.write(config.target, hash.digest('hex'));
+        grunt.file.write(config.target, hash.digest(config.encoding || 'hex'));
     });
 };
