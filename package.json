@@ -1,11 +1,11 @@
 {
   "name": "grunt-hash-file-contents",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Takes a list of files and creates one big has for all their contents.",
   "files": [
-    "index.js"
+    "tasks/index.js"
   ],
-  "main": "index.js",
+  "main": "tasks/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/MidlandHR/grunt-hash-file-contents.git"
