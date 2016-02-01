@@ -1,6 +1,6 @@
 {
   "name": "grunt-hash-file-contents",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Takes a list of files and creates one big has for all their contents.",
   "main": "index.js",
   "repository": {
