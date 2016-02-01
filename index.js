@@ -2,10 +2,10 @@ module.exports = function(grunt) {
     var crypto = require('crypto');
 
     var getConfig = function() {
-        return grunt.config('mhrHashFileContents');
+        return grunt.config('hashFileContents');
     };
 
-    grunt.registerTask('mhrHashFileContents', function() {
+    grunt.registerTask('hashFileContents', function() {
         var config = getConfig(),
             hash = crypto.createHash(config.algorithm || 'md5');
 
